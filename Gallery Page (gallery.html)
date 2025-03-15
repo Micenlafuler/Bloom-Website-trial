@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Valley Nursery - Gallery</title>
+</head>
+<body>
+
+    <!-- Include Header -->
+    <header>
+        <img src="logo.png" alt="Bloom Valley Nursery Logo">
+        <h1>Bloom Valley Nursery</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Gallery Page Content -->
+    <section>
+        <h2>Gallery</h2>
+        <p>Browse our collection of plants and gardening supplies.</p>
+        <table>
+            <tr>
+                <td><img src="plant1.jpg" alt="Plant 1"><br><button>Add to Cart</button></td>
+                <td><img src="plant2.jpg" alt="Plant 2"><br><button>Add to Cart</button></td>
+                <td><img src="plant3.jpg" alt="Plant 3"><br><button>Add to Cart</button></td>
+            </tr>
+        </table>
+        <button>View Shopping Cart</button>
+    </section>
+
+    <!-- Include Footer -->
+    <footer>
+        <p>&copy; 2025 Bloom Valley Nursery | Follow us on social media</p>
+    </footer>
+
+</body>
+</html>
