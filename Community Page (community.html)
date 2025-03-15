@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Valley Nursery - Community</title>
+</head>
+<body>
+
+    <!-- Include Header -->
+    <header>
+        <img src="logo.png" alt="Bloom Valley Nursery Logo">
+        <h1>Bloom Valley Nursery</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Community Page Content -->
+    <section>
+        <h2>Community & Testimonials</h2>
+        
+        <h3>Customer Testimonials</h3>
+        <p>"Bloom Valley Nursery has the best selection of plants! Highly recommended." - Jane D.</p>
+        <p>"Great service and healthy plants! My garden has never looked better." - Mark R.</p>
+
+        <h3>Community Involvement</h3>
+        <p>We actively participate in community events and gardening workshops. Join us for our next event!</p>
+    </section>
+
+    <!-- Include Footer -->
+    <footer>
+        <p>&copy; 2025 Bloom Valley Nursery | Follow us on social media</p>
+    </footer>
+
+</body>
+</html>
