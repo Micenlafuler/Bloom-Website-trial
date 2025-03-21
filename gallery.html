@@ -1,44 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bloom Valley Nursery - Gallery</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - Bloom Valley Nursery</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
 
-    <!-- Include Header -->
-    <header>
-        <img src="logo.png" alt="Bloom Valley Nursery Logo">
-        <h1>Bloom Valley Nursery</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="community.html">Community</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- HEADER -->
+  <header>
+    <img src="images/Client1_LogoPalette1_4B4A1E.png" alt="Bloom Valley Nursery Logo" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="community.html">Community</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Gallery Page Content -->
-    <section>
-        <h2>Gallery</h2>
-        <p>Browse our collection of plants and gardening supplies.</p>
-        <table>
-            <tr>
-                <td><img src="plant1.jpg" alt="Plant 1"><br><button>Add to Cart</button></td>
-                <td><img src="plant2.jpg" alt="Plant 2"><br><button>Add to Cart</button></td>
-                <td><img src="plant3.jpg" alt="Plant 3"><br><button>Add to Cart</button></td>
-            </tr>
-        </table>
-        <button>View Shopping Cart</button>
-    </section>
+  <!-- GALLERY SECTION -->
+  <main>
+    <h2>Our Collection</h2>
+    <table>
+      <tr>
+        <td>
+          <img src="images/Client1_BirchTree.png" alt="Birch Tree" />
+          <p class="caption">Birch Tree</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </td>
+        <td>
+          <img src="images/Client1_BirdHouse.png" alt="Blue Birdhouse" />
+          <p class="caption">Blue Birdhouse</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </td>
+        <td>
+          <img src="images/Client1_MapleTree.png" alt="Maple Tree" />
+          <p class="caption">Maple Tree</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="images/Client1_PottingSoil.png" alt="Potting Soil" />
+          <p class="caption">Potting Soil</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </td>
+        <td>
+          <img src="images/Client1_SpiderPlant.png" alt="Spider Plant" />
+          <p class="caption">Spider Plant</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </td>
+        <td>
+          <img src="images/Client1_StringofPearls.png" alt="String of Pearls" />
+          <p class="caption">String of Pearls</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="images/Client1_WateringCan.png" alt="Watering Can" />
+          <p class="caption">Watering Can</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </td>
+        <td colspan="2"></td>
+      </tr>
+    </table>
 
-    <!-- Include Footer -->
-    <footer>
-        <p>&copy; 2025 Bloom Valley Nursery | Follow us on social media</p>
-    </footer>
+    <!-- Cart Controls -->
+    <div style="text-align: center; margin: 20px 0;">
+      <button id="view-cart" class="btn">View Cart</button>
+      <button id="clear-cart" class="btn">Clear Cart</button>
+      <button id="process-order" class="btn">Process Order</button>
+    </div>
+  </main>
+
+  <!-- CART MODAL -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Your Shopping Cart</h2>
+      <ul id="cart-items"></ul>
+      <button id="close-cart" class="btn">Close</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Bloom Valley Nursery | Follow us on social media</p>
+    <button id="subscribe-btn" class="btn">Subscribe</button>
+  </footer>
 
 </body>
 </html>
