@@ -1,41 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bloom Valley Nursery - Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bloom Valley Nursery</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
 
-    <!-- Include Header -->
-    <header>
-        <img src="logo.png" alt="Bloom Valley Nursery Logo">
-        <h1>Bloom Valley Nursery</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="community.html">Community</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- HEADER -->
+  <header>
+    <img src="images/Client1_LogoPalette1_4B4A1E.png" alt="Bloom Valley Nursery Logo" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="community.html">Community</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Homepage Content -->
-    <section>
-        <h2>Welcome to Bloom Valley Nursery</h2>
-        <p>Your go-to destination for high-quality plants, trees, and gardening supplies.</p>
-        <h3>Our Special Offers</h3>
-        <ul>
-            <li>Buy 2 Get 1 Free on select perennials!</li>
-            <li>Free potting soil with every purchase this weekend.</li>
-        </ul>
-    </section>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <img src="images/germinating_seedling.jpeg" alt="Germinating Seedling" class="hero-image" />
+    <h1>Welcome to Bloom Valley Nursery</h1>
+    <p>Your source for beautiful plants and gardening supplies.</p>
+    <a href="gallery.html" class="btn">Shop Now</a>
+  </section>
 
-    <!-- Include Footer -->
-    <footer>
-        <p>&copy; 2025 Bloom Valley Nursery | Follow us on social media</p>
-    </footer>
+  <!-- BLOG SECTION (OPTIONAL FEATURE) -->
+  <section class="blog-section">
+    <h2>Latest from Our Garden</h2>
+    <p>Explore our latest updates, gardening tips, and nursery highlights.</p>
+    <div class="blog-grid">
+      <div class="blog-post">
+        <img src="images/Client1_BirchTree.png" alt="Birch Tree">
+        <p>New arrivals: Beautiful Birch Trees now in stock!</p>
+      </div>
+      <div class="blog-post">
+        <img src="images/Client1_SpiderPlant.png" alt="Spider Plant">
+        <p>Check out our healthy hanging Spider Plants.</p>
+      </div>
+      <div class="blog-post">
+        <img src="images/Client1_PottingSoil.png" alt="Potting Soil">
+        <p>Top-quality soil blends now available for spring planting.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN FEATURES -->
+  <section class="content-grid">
+    <div class="feature">
+      <h2>Quality Plants</h2>
+      <p>We provide the best plants for your home & garden.</p>
+    </div>
+    <div class="feature">
+      <h2>Eco-Friendly</h2>
+      <p>All our plants are grown sustainably with care.</p>
+    </div>
+    <div class="feature">
+      <h2>Community</h2>
+      <p>Join our gardening workshops & events.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Bloom Valley Nursery | Follow us on social media</p>
+    <button id="subscribe-btn" class="btn">Subscribe</button>
+  </footer>
 
 </body>
 </html>
