@@ -1,52 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bloom Valley Nursery - About Us</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Bloom Valley Nursery</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
 
-    <!-- Include Header -->
-    <header>
-        <img src="logo.png" alt="Bloom Valley Nursery Logo">
-        <h1>Bloom Valley Nursery</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="community.html">Community</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- HEADER -->
+  <header>
+    <img src="images/Client1_LogoPalette1_4B4A1E.png" alt="Bloom Valley Nursery Logo" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="community.html">Community</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- About Us Page Content -->
-    <section>
-        <h2>About Us</h2>
-        <p>We are a family-owned plant nursery dedicated to providing the best plants and gardening tools.</p>
-        <h3>Business Hours</h3>
-        <p>Monday–Friday: 9 a.m. to 6 p.m.<br>Saturday–Sunday: 10 a.m. to 5 p.m.</p>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>About Bloom Valley Nursery</h1>
+    <p>Growing a Greener Tomorrow</p>
+  </section>
 
-        <h3>Contact Us</h3>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name"><br>
+  <!-- ABOUT CONTENT -->
+  <main>
+    <section class="about-content">
+      <h2>Our Mission</h2>
+      <p>We are a family-owned nursery dedicated to providing quality plants and gardening supplies to our community.</p>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email"><br>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea><br>
-
-            <button type="submit">Submit</button>
-        </form>
+      <h3>Business Hours</h3>
+      <p>Monday–Friday: 9 AM – 6 PM<br>Saturday–Sunday: 10 AM – 5 PM</p>
     </section>
 
-    <!-- Include Footer -->
-    <footer>
-        <p>&copy; 2025 Bloom Valley Nursery | Follow us on social media</p>
-    </footer>
+    <!-- CONTACT FORM -->
+    <section>
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- CONFIRMATION MODAL -->
+  <div id="confirmation-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Email Sent</h2>
+      <p>Your message has been successfully sent. We’ll get back to you soon!</p>
+      <button id="close-modal" class="btn">OK</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Bloom Valley Nursery | Follow us on social media</p>
+    <button id="subscribe-btn" class="btn">Subscribe</button>
+  </footer>
 
 </body>
 </html>
